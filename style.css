@@ -440,58 +440,29 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   /* boton.. */ 
-  .contenedor3 .botn .bb {
-    width: 10em;
-    margin-top: 28px;
-    margin-bottom: 28px;
-    position: relative;
-    height: 3.5em;
-    border: 3px ridge #149CEA;
-    outline: none;
-    background-color: transparent;
-    color: #212121;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+  .bt {
+      display: inline-block;
+      padding: 0.7em 1.4em;
+      background-color: #2604bf;
+      color: #DEDEDE;
+      text-decoration: none;
+      border: none;
+      border-radius: 0.5em;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
 
-  .contenedor3 .botn .bb::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: white;
-    transition: 0.5s;
-    transform-origin: center;
-  }
-
-  .contenedor3 .botn .bb::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: white;
-    transition: 0.5s;
-  }
-
-  .botn .bb:hover::before, .bb:hover::after {
-    transform: scale(0)
-  }
-
-  .botn .bb:hover {
-    box-shadow: inset 0px 0px 35px #06bff8;
-  }
+    .bt:hover {
+      background-color: #1c0391;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
 
   /*contenedor4...........................................*/
 
